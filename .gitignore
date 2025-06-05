@@ -1,0 +1,23 @@
+#Pliki Node Modules
+node_modules/
+
+#logi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#Bildy
+dist/
+build/
+
+.env
+.env.local
+.env.*.local
+
+.vscode/
+.idea/
+
+coverage/
+
+.DS_Store
+Thumbs.db
