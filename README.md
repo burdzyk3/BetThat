@@ -1,4 +1,4 @@
-#BetThat
+# BetThat
 ## Simple Betting site for learning frontend and backend
 
 
