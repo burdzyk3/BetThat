@@ -13,8 +13,15 @@ app.use(
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
+/*      STRONA GŁÓWNA     */
+
+app.get("/", (req,res) =>{
 	res.sendFile(path.join(__dirname, "public", "pages", "index.html"))
+})
+
+/*     POSTAW     */
+app.get("/bet", (req, res) => {
+	res.sendFile(path.join(__dirname, "public", "pages", "bet.html"))
 });
 
 app.post("/submit", (req, res) => {
@@ -62,6 +69,9 @@ app.post("/login", (req, res) => {
 app.get("/registration", (req,res)=>{
 	res.sendFile(path.join(__dirname, "public", "pages", "registration.html"))
 })
+
+
+
 
 
 app.listen(port, () => {

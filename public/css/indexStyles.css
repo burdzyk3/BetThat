@@ -1,0 +1,151 @@
+
+/* HERO IMG*/
+
+.heroImage {
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 60px);
+	overflow: hidden;
+}
+
+.heroImgFull {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.heroText {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+.heroText h1 {
+	font-size: 70px;
+}
+
+.heroSpanThat {
+	color: #619b03;
+}
+
+.heroText p {
+	font-size: 28px;
+	margin-top: 40px;
+}
+
+.heroShadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/*  O NAS  */
+.aboutUs{
+    width: 100%;
+    height: 330px;
+}
+
+.aboutUs h1 {
+    margin: 50px;
+    font-size: 54px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aboutUs p{
+    margin: 0 50px 0 50px;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+
+/*  OPINIE */
+
+.opinions{
+    height: 920px;
+    background-color: rgb(138, 130, 130);
+}
+
+.opinions h1{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.opinionTabs{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(300px, 300px));
+    gap: 40px;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+
+.opinionTab{
+    background-color: #16DB65;
+    height: 400px;
+    width:300px;
+    border-radius: 15px 70px 40px;
+    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+    transition: scale 0.5s;
+}
+
+.opinionTab:hover{
+    scale: 1.2;
+}
+
+.opinionTabPhoto img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.opinionTabUsername{
+    font-size: 40px;
+    text-align: center;
+}
+
+.opinionTabOpinion{
+    margin: 30px 0 30px 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.opinionsPWhyUs {
+    text-align: center;
+    font-size: 42px;
+    margin: 40px 0 20px;
+}
+
+.opinionsPUsersOpinion{
+    text-align: center;
+    font-size: 32px;
+}
+
+
+@media (max-width: 1650px) {
+    .opinionTabs{
+        grid-template-columns: repeat(3, minmax(300px, 300px));
+    }
+
+    .tab4{
+        display: none;
+    }
+}

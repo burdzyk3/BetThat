@@ -7,8 +7,16 @@
   },
   "author": "burdzyk3",
   "license": "ISC",
-  "description": "",
+  "description": "**In progress**",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burdzyk3/BetThat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/burdzyk3/BetThat/issues"
+  },
+  "homepage": "https://github.com/burdzyk3/BetThat#readme"
 }

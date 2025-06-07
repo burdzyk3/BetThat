@@ -1,77 +1,141 @@
 <!DOCTYPE html>
 <html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BetThat</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/indexStyles.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BetThat</title>
-    <link rel="stylesheet" href="css/base.css">
-</head>
+	<body>
+		<nav class="navBar">
+			<span class="navLogo">
+				<img class="logoImg" src="./img/logo.png" alt="logo strony" />
+			</span>
 
-<body>
+			<ul class="navLinks">
+				<li><a href="/">Strona Główna</a></li>
+				<li><a href="/bet">Postaw</a></li>
+				<li><a href="/schedule">Harmonogram</a></li>
+				<li><a href="/contact">Kontakt</a></li>
+			</ul>
 
-    <nav class="navBar">
-        <span class="navLogo">
-            <img class="logoImg" src="./img/logo.png" alt="logo strony">
-        </span>
+			<div class="navButtons">
+				<a href="/login" class="logButton">Zaloguj</a>
+				<a href="/registration" class="regButton">Zarejestruj</a>
+			</div>
+		</nav>
 
-        <ul class="navLinks">
-            <li><a href="/">Postaw</a></li>
-            <li><a href="/schedule">Harmonogram</a></li>
-            <li><a href="/contact">Kontakt</a></li>
-        </ul>
+		<main>
+			<section class="heroImage">
+				<img
+					src="../img/heroImgBig.jpg"
+					alt="Stadion piłkarski"
+					class="heroImgFull"
+				/>
+				<div class="heroText">
+					<h1>Witamy na stronie Bet<span class="heroSpanThat">That!</span></h1>
+					<p>
+						To tutaj obstawisz wyniki wszystkich spotkań z najlepszych lig
+						świata.
+					</p>
+				</div>
+				<div class="heroShadow"></div>
+			</section>
 
-        <div class="navButtons">
-            <button><a href="/registration">Zarejestruj</a></button>
-            <button><a href="/login">Zaloguj</a></button>
-        </div>
+			<section class="aboutUs">
+				<div class="wrapper">
+					<h1>O Nas</h1>
+					<p>
+						Nasz serwisz działa na zasadzie obstawiania wyników spotkań, nie na
+						pieniądze tylko na punkty. Obowiązuje odpowiednia punktacja w
+						zależności jak blisko typ był ostatecznemu wynikowi spotkania.
+					</p>
+				</div>
+			</section>
 
-    </nav>
+			<section class="opinions">
+				<h1>Opinie</h1>
+				<p class="opinionsPWhyUs">Dlaczego powinieneń wybrać akurat nas?</p>
+				<p class="opinionsPUsersOpinion">Opinie naszych użytkowników!</p>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+				<div class="opinionTabs">
+					<div class="opinionTab tab1">
+						<div class="opinionTabPhoto centredX">
+							<img src="../img/opinionUserOne.jpg" alt="Użytwkownik serwisu" />
+						</div>
+						<p class="opinionTabUsername">Patryk Wokalski</p>
+						<p class="opinionTabOpinion">
+							Świetna zabawa, przemyślane zakłady, gorąco polecam!
+						</p>
+					</div>
 
+					<div class="opinionTab tab2">
+						<div class="opinionTabPhoto centredX">
+							<img src="../img/opinionUserTwo.jpg" alt="Użytwkownik serwisu" />
+						</div>
+						<p class="opinionTabUsername">Marta Rogalska</p>
+						<p class="opinionTabOpinion">
+							Dodatkowa zabawa, co tydzień stawiam wyniki meczów.
+						</p>
+					</div>
 
+					<div class="opinionTab tab3">
+						<div class="opinionTabPhoto centredX">
+							<img
+								src="../img/opinionUserThree.jpg"
+								alt="Użytwkownik serwisu"
+							/>
+						</div>
+						<p class="opinionTabUsername">Agnieszka Nowak</p>
+						<p class="opinionTabOpinion">
+							Przemyślane typy oraz dobrze działająca strona.
+						</p>
+					</div>
 
-    <main>
-        <section class="matchSection">
+					<div class="opinionTab tab4">
+						<div class="opinionTabPhoto centredX">
+							<img src="../img/opinionUserFour.jpg" alt="Użytwkownik serwisu" />
+						</div>
+						<p class="opinionTabUsername">Jakub Podolski</p>
+						<p class="opinionTabOpinion">
+							Gram od 2 lat, nigdy nie byłem rozczarowany.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
 
-            <h1>POSTAW NA BetThat</h1>
+		<footer class="footer">
+			<div class="footerIcons">
+				<img src="../img/championsleagueicon.svg" alt="Ikona ligi mistrzów" />
+				<img src="../img/eufaIcon.svg" alt="Ikona EUFA" />
+				<img
+					src="../img/premierLeagueIcon.svg"
+					alt="Ikona ligi angielskej, Premier League"
+				/>
+				<img
+					src="../img/laligaIcon.svg"
+					alt="Ikona ligi hiszpańskiej, La Liga"
+				/>
+			</div>
 
-            <form action="submit" method="post" id="betForm">
-                <label id="match1team1">Amico</label>
-                <input type="number" id="amico" name="amico">
-                <br>
-                <label id="match1team2">Zaglebie</label>
-                <input type="number" id="zaglebie" name="zaglebie">
-                <br>
-                <button type="submit">POSTAW</button>
-            </form>
+			<div class="links">
+				<h2>&copy; 2025r. BetThat!</h2>
+				<p>Strona powstała aby budować projekty do portfolio.</p>
+				<div class="github">
+					<img
+						src="../img/githubIcon.svg"
+						alt="Ikona github, prowadzi do strony https://github.com/burdzyk3"
+					/>
+					<p class="githubButton">
+						<a href="https://github.com/burdzyk3">Przenieś do github</a>
+					</p>
+				</div>
+			</div>
+		</footer>
 
-            <p id="userBet">
-
-            </p>
-
-        </section>
-    </main>
-
-
-    <script src="script.js"></script>
-</body>
-
+		<script src="script.js"></script>
+	</body>
 </html>

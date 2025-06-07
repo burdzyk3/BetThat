@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -5,19 +7,32 @@
 }
 
 body {
-	background-color: #020202;
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 300;
+	background-color: #303030;
 	color: white;
 }
 
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 .navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
+	position: sticky;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
 	height: 60px;
 	width: 100%;
 	background: linear-gradient(160deg, #04471c, #619b03);
 	/* border-bottom: 3px solid #058c42; */
+	z-index: 10;
 }
 
 .logoImg {
@@ -26,10 +41,10 @@ body {
 	margin-left: 20px;
 }
 
-.navLogo{
-    position: absolute;
-    top: 0;
-    left: 0;
+.navLogo {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .navLinks {
@@ -37,31 +52,101 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-    position: relative;
-    left: 60px;
-    gap: 100px;
-    height: 100%;
-    margin-left: 70px;
+	position: relative;
+	left: 60px;
+	gap: 100px;
+	height: 100%;
+	margin-left: 70px;
 	list-style: none;
 }
 
 .navLinks li {
-    font-size: 24px;
+	font-size: 26px;
+	/* text-transform: uppercase; */
+	transition: scale 0.3s;
 }
 
-.navLinks li a{
+.navLinks li:hover {
+	scale: 1.2;
+}
+
+.navLinks li a {
+	text-decoration: none;
+}
+
+.navLinks li a:link,
+a:visited {
+	color: white;
+}
+
+.navButtons {
+	display: flex;
+	gap: 50px;
+	margin-right: 60px;
+}
+
+.navButtons a {
+	font-size: 18px;
+	font-weight: 600;
+	padding: 6px 16px;
+	color: #333;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: 3px solid #0d2818;
+	border-radius: 20px;
+}
+
+.logButton {
+	background-color: rgba(212, 255, 0, 1);
+}
+
+.regButton {
+	background-color: rgba(255, 30, 30, 0.8);
+}
+
+
+/*    FOOTER   */
+
+
+.footerIcons{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10%;
+    height: 100px;
+
+}
+
+.footerIcons img{
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    color: yellow;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 0 30px;
+}
+
+.links p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.github{
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.githubButton a {
     text-decoration: none;
 }
 
-.navLinks li a:link, a:visited{
-    color: white;
-}
 
-.navButtons{
-    margin-right: 60px;
-}
-
-.navButtons button a {
-    color: black;
-    text-decoration: none;
-}
