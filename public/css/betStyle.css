@@ -1,3 +1,15 @@
+.flexWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 0 50px 0 50px;
+    /* align-items: flex-start; */
+}
+
+section:not(.headerBet) {
+    margin-top: 50px;
+}
+
 /*    HEADER    */
 .headerBet {
     width: 100vw;
@@ -18,38 +30,66 @@
     padding-bottom: 20px;
 }
 
+.matchSection{
+    width: 800px;
+    text-align: center;
+}
+
+
+/*   Lista sportów    */
 .selectSport{
-    position: absolute;
-    top: 200px;
-    left: 400px;
+    width: 250px;
+    overflow: hidden;
 }
 
 .sports li{
-    margin: 20px;
+    gap: 30px;
 }
 
-.football li:not(.show){
+.sportsList li {
+    cursor: pointer;
+}
+
+ul, ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sportsList ul{
     display: none;
 }
 
-/* .football:hover > ul{
-    display: block;
+.sportsList ul {
+    display: none;
 }
 
-.basketball:hover > ul {
-    display: block;
+.sportsList ul {
+    position: relative;
+    left: 20px;
 }
 
-.f1:hover > ul {
-    display: block;
-} */
-
-.footballUl{
-    list-style: none;
+.show > ul{
+    display: flex;
 }
 
-.footballUl.show
+.matchSection{
+    width: 800px;
+}
 
-.show{
-    display: list-item;
+
+
+
+/*    TABELA WYNIKÓW   */
+.currentTableTable th, tr,td{
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.currentTableTable{
+    border-collapse: collapse;
+}
+
+.currentSportLeagueDiv{
+    text-align: center;
 }
