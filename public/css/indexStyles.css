@@ -93,9 +93,10 @@
 
 
 .opinionTab{
-    background-color: #16DB65;
     height: 400px;
     width:300px;
+    background:linear-gradient(130deg,#16DB65, #98FBCB);
+    color: #5b5a5a;
     border-radius: 15px 70px 40px;
     box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
     transition: scale 0.5s;

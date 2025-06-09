@@ -23,3 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
         result.textContent = text
 	});
 });
+
+
+
+const footballList = document.querySelector("li.football")
+const footballUl = document.querySelector("ul.footballUl")
+const footballLi = document.querySelectorAll("li.footballLi")
+
+
+footballList.addEventListener("click", ()=>{
+	footballUl.classList.toggle("show")
+	footballLi.forEach((li)=>{
+		li.classList.toggle("show")
+	})
+})

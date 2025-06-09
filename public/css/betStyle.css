@@ -1,0 +1,55 @@
+/*    HEADER    */
+.headerBet {
+    width: 100vw;
+    background-color: tomato;
+}
+
+.headerBetDiv{
+    text-align: center;
+}
+
+.headerBetDiv h1 {
+    padding-top: 20px;
+    font-size: 42px;
+}
+
+.headerBetDiv p {
+    font-size: 26px;
+    padding-bottom: 20px;
+}
+
+.selectSport{
+    position: absolute;
+    top: 200px;
+    left: 400px;
+}
+
+.sports li{
+    margin: 20px;
+}
+
+.football li:not(.show){
+    display: none;
+}
+
+/* .football:hover > ul{
+    display: block;
+}
+
+.basketball:hover > ul {
+    display: block;
+}
+
+.f1:hover > ul {
+    display: block;
+} */
+
+.footballUl{
+    list-style: none;
+}
+
+.footballUl.show
+
+.show{
+    display: list-item;
+}
