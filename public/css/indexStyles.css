@@ -93,11 +93,12 @@
 
 
 .opinionTab{
-    background-color: #16DB65;
     height: 400px;
     width:300px;
+    background: linear-gradient(135deg, #32FF7E, #00B894);
+    color: #605d5d;
     border-radius: 15px 70px 40px;
-    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     transition: scale 0.5s;
 }
 
@@ -148,4 +149,6 @@
     .tab4{
         display: none;
     }
+    
 }
+
