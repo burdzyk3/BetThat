@@ -36,15 +36,18 @@ document.querySelectorAll(".sportsList > li").forEach(li=>{
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
+
 	const menuButton = document.querySelector(".navButton button")
 	const navLinks = document.querySelector(".navLinks")
 	const navBar = document.querySelector(".navBar")
 	const navButtons = document.querySelector(".navButtons")
+	const body = document.querySelector("body")
 	
 	menuButton.addEventListener("click", ()=>{
 		navLinks.classList.toggle("active")
 		navBar.classList.toggle("active")
 		navButtons.classList.toggle("active")
+		body.classList.toggle("noScroll")
 	})
 })
 	
