@@ -31,3 +31,41 @@ document.querySelectorAll(".sportsList > li").forEach(li=>{
 		this.classList.toggle("show")
 	})
 })
+
+
+
+
+document.addEventListener("DOMContentLoaded", ()=>{
+	const menuButton = document.querySelector(".navButton button")
+	const navLinks = document.querySelector(".navLinks")
+	const navBar = document.querySelector(".navBar")
+	const navButtons = document.querySelector(".navButtons")
+	
+	menuButton.addEventListener("click", ()=>{
+		navLinks.classList.toggle("active")
+		navBar.classList.toggle("active")
+		navButtons.classList.toggle("active")
+	})
+})
+	
+
+
+
+// // app.js
+// const express = require('express');
+// const db = require('./db');
+// const app = express();
+
+// app.get('/users', (req, res) => {
+//   db.query('SELECT * FROM users', (err, results) => {
+//     if (err) return res.status(500).send('Błąd zapytania');
+//     res.json(results);
+//   });
+// });
+
+// app.listen(3000, () => {
+//   console.log('Serwer działa na porcie 3000');
+// });
+
+
+

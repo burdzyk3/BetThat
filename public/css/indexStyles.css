@@ -1,4 +1,3 @@
-
 /* HERO IMG*/
 
 .heroImage {
@@ -45,108 +44,116 @@
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
-
 /*  O NAS  */
-.aboutUs{
-    width: 100%;
-    height: 330px;
+.aboutUs {
+	width: 100%;
+	padding-bottom: 50px;
+	/* height: 330px; */
 }
 
 .aboutUs h1 {
-    margin: 50px;
-    font-size: 54px;
-    text-align: center;
-    text-transform: uppercase;
+	margin: 50px;
+	font-size: 54px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-.aboutUs p{
-    margin: 0 50px 0 50px;
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 50px;
+.aboutUs p {
+	margin: 0 50px 0px 50px;
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 50px;
 }
-
-
 
 
 /*  OPINIE */
 
-.opinions{
-    height: 920px;
-    background-color: rgb(138, 130, 130);
+.opinions {
+	/* height: 920px; */
+	background-color: rgb(138, 130, 130);
 }
 
-.opinions h1{
-    padding-top: 50px;
-    text-align: center;
-    font-size: 54px;
-    text-transform: uppercase;
+.opinions h1 {
+	padding-top: 50px;
+	text-align: center;
+	font-size: 54px;
+	text-transform: uppercase;
 }
 
-.opinionTabs{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 300px));
-    gap: 40px;
-    justify-content: center;
-    padding: 80px 20px;
+.opinionTabs {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+	gap: 40px;
+	justify-content: center;
+	padding: 100px 20px;
 }
 
-
-.opinionTab{
-    height: 400px;
-    width:300px;
-    background:linear-gradient(130deg,#16DB65, #98FBCB);
-    color: #5b5a5a;
-    border-radius: 15px 70px 40px;
-    box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
-    transition: scale 0.5s;
+.opinionTab {
+	height: 400px;
+	/* width: 300px; */
+	background: linear-gradient(130deg, #16db65, #98fbcb);
+	color: #5b5a5a;
+	border-radius: 15px 70px 40px;
+	box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+	transition: scale 0.5s;
 }
 
-.opinionTab:hover{
-    scale: 1.2;
+.opinionTab:hover {
+	scale: 1.2;
 }
 
-.opinionTabPhoto img{
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 150px;
-    width: 150px;
-    margin-top: 30px;
-    border: 1px solid black;
-    border-radius: 50%;
-    object-fit: cover;
+.opinionTabPhoto img {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 150px;
+	width: 150px;
+	margin-top: 30px;
+	border: 1px solid black;
+	border-radius: 50%;
+	object-fit: cover;
 }
 
-.opinionTabUsername{
-    font-size: 40px;
-    text-align: center;
+.opinionTabUsername {
+	font-size: 40px;
+	text-align: center;
 }
 
-.opinionTabOpinion{
-    margin: 30px 0 30px 0;
-    font-size: 24px;
-    text-align: center;
+.opinionTabOpinion {
+	margin: 30px 0 30px 0;
+	font-size: 24px;
+	text-align: center;
 }
 
 .opinionsPWhyUs {
-    text-align: center;
-    font-size: 42px;
-    margin: 40px 0 20px;
+	text-align: center;
+	font-size: 42px;
+	margin: 40px 0 20px;
 }
 
-.opinionsPUsersOpinion{
-    text-align: center;
-    font-size: 32px;
+.opinionsPUsersOpinion {
+	text-align: center;
+	font-size: 32px;
 }
 
 
-@media (max-width: 1650px) {
-    .opinionTabs{
-        grid-template-columns: repeat(3, minmax(300px, 300px));
-    }
+@media (max-width: 1450px) {
+	.opinionTabs {
+		grid-template-columns: repeat(2, minmax(300px, 1fr));
+	}
+} 
 
-    .tab4{
-        display: none;
-    }
+@media (max-width: 768px) {
+	.opinionTabs {
+		grid-template-columns: repeat(1, minmax(300px, 1fr));
+	}
+}
+
+@media (max-width: 992px) {
+	/* body.noScroll {
+		overflow: hidden;   --> navBar aby nie można było scrollować, toggle na potem
+	} */
+	.heroImage{
+		height: 100vh;
+	}
 }
