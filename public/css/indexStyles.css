@@ -145,7 +145,34 @@
 	.opinionTabs {
 		grid-template-columns: repeat(1, minmax(300px, 1fr));
 	}
+
+	
+	.heroImage .heroText h1{
+		font-size: 48px;
+	} 
+
+	.heroImage .heroText p {
+		font-size: 30px;
+	}
+
+	.aboutUs .aboutUsP{
+		font-size: 30px;
+	}
+
+	.wrapper .aboutUsh1{
+		font-size: 42px;
+	}
+
+	section.opinions h1{
+		font-size: 42px;
+	}
+
+	.opinions p{
+		font-size: 30px;
+	}
+
 }
+
 
 @media (max-width: 992px) {
 	 
@@ -156,4 +183,7 @@
 	.opinionTab:hover {
 		scale: none;
 	}
+
+	
+
 }

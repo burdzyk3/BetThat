@@ -74,6 +74,12 @@ body {
 	text-decoration: none;
 }
 
+.navLinks li:last-child {
+	margin-right: 40px;
+}
+
+
+
 .navLinks li a:link,
 a:visited {
 	color: white;
@@ -174,86 +180,127 @@ a:visited {
 /* MEDIA QUERIES */
 
 
+@media (min-width: 1201px)and (max-width: 1400px) {
+	.navLinks li a{
+		font-size: 22px;
+	}
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+	.navLinks li a {
+		font-size: 20px;
+	}
+
+	.mainSite {
+		display: flex;
+	}
+
+	.navButtons a {
+		font-size: 15px;
+	}
+
+	.navLinks li:last-child {
+		margin-right: 40px;
+	}
+}
+
 @media (max-width: 992px) {
 	body.noScroll {
 		overflow: hidden;
 	}
 
-  .navBar {
-    display: none;
-    flex-direction: column;
-    background: linear-gradient(160deg, #04471c, #619b03);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 80px;
-    z-index: 50;
-  }
+	.navBar {
+		display: none;
+		flex-direction: column;
+		background: linear-gradient(160deg, #04471c, #619b03);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		padding-top: 80px;
+		z-index: 50;
+	}
 
-  .navBar.active {
-    display: flex;
-  }
+	.navBar.active {
+		display: flex;
+	}
 
-  .navLinks {
-    flex-direction: column;
-	left: 0;
-    gap: 20px;
-    margin: 0;
-  }
+	.navLinks {
+		flex-direction: column;
+		left: 0;
+		gap: 20px;
+		margin: 0;
+	}
 
-  .navLinks li {
-    font-size: 28px;
-    margin: 0;
-  }
+	.navLinks li {
+		font-size: 28px;
+		margin: 0;
+	}
 
-  .navButtons {
-    flex-direction: column;
-    gap: 20px;
-    margin: 30px 0 0;
-  }
+	.navButtons {
+		flex-direction: column;
+		gap: 20px;
+		margin: 30px 0 0;
+	}
 
-  .navButtons a {
-    font-size: 20px;
-    /* padding: 10px 20px; */
-    border-radius: 30px;
-    text-align: center;
-    color: black;
-  }
+	.navButtons a {
+		font-size: 20px;
+		/* padding: 10px 20px; */
+		border-radius: 30px;
+		text-align: center;
+		color: black;
+	}
 
-  .logButton {
-    background-color: rgba(212, 255, 0, 1);
-    border-color: #9caf00;
-  }
+	.logButton {
+		background-color: rgba(212, 255, 0, 1);
+		border-color: #9caf00;
+	}
 
-  .regButton {
-    background-color: rgba(255, 30, 30, 0.8);
-    border-color: #bf1f1f;
-	margin-bottom: 80px;
-  }
+	.regButton {
+		background-color: rgba(255, 30, 30, 0.8);
+		border-color: #bf1f1f;
+		margin-bottom: 80px;
+	}
 
-  .hamburgerMenu {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 100;
-  }
+	.hamburgerMenu {
+		display: block;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		z-index: 100;
+	}
 
-  .hamburgerMenu img {
-    width: 40px;
-    height: 40px;
-  }
+	.hamburgerMenu img {
+		width: 40px;
+		height: 40px;
+	}
 
-  .logoImg {
-    display: none;
-  }
+	.logoImg {
+		display: none;
+	}
 
-  .navLinks li:hover {
-	scale: 1;
-}
+	.navLinks li:hover {
+		scale: 1;
+	}
+
+	.links h2 {
+		font-size: 16px;
+	}
+
+	.links p {
+		font-size: 16px;
+		/* margin-bottom: 15px; */
+	}
+
+	.github {
+		flex-direction: column;
+	}
+
+	/* .heroImage .heroText h1{
+		font-size: 48px;
+	} */
 }
