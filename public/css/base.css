@@ -172,7 +172,22 @@ a:visited {
 	display: none;
 }
 
+.rotate{
+	animation: hamMenuRotateAnimation 0.5s ease;
+}
+
 /* MEDIA QUERIES */
+
+@keyframes  hamMenuRotateAnimation{
+	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}
+}
+
 
 
 @media (min-width: 1201px)and (max-width: 1400px) {

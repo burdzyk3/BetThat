@@ -1,7 +1,7 @@
 .flexWrapper{
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     padding: 0 50px 0 50px;
     /* align-items: flex-start; */
 }
@@ -72,10 +72,10 @@ ul, ul li{
 .show > ul{
     display: flex;
 }
-
+/* 
 .matchSection{
     width: 800px;
-}
+} */
 
 
 
